@@ -8,4 +8,4 @@ The server is required for interaction with the google Distance Matrix API.
 -Install the requests module (sudo pip install requests)
 -Run the server application (python server.py)
 
-Plug in your own API keys for Google Distance Matrix, Google Maps API and Flickr API into apices.json.
+Plug in your own API keys for Google Distance Matrix, Google Maps API and Flickr API into apikeys.json.
