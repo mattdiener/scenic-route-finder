@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key={{mapsKey}}&callback=initialize"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <link href="css/open-iconic.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="side-pane">
+      <form id="search-form">
+        <h1>Picnic Planner</h1>
+
+        <label for="start-address" class="heading">Start Address</label>
+        <input type="text" id="start-address" style="width:calc(100% - 5px);"></input>
+
+        <label for="travel-time" class="heading">Travel Time (Hours:Minutes)</label>
+        <input type="time" id="travel-time"></input>
+
+        <label for="travel-mode" class="heading">Mode of Transportation</label>
+        <select id="travel-mode">
+          <option value="car">By Car</option>
+          <option value="walking">Walking</option>
+        </select>
+
+        <label class="heading">Other Options</label>
+        <input type="checkbox" id="checkbox-show-ratings" value="show-ratings">
+        <label for="checkbox-show-ratings">Show Location Ratings</label>
+
+        <button type="button" name="search-button" id="search-button">Search</button>
+      </form>
+      <div id="collapse-button">
+        <div class="collapse-icon">
+          <span class="oi" data-glyph="chevron-left" title="Toggle Side Pane" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
