@@ -35,4 +35,4 @@ def distanceMatrix():
     return requests.get('https://maps.googleapis.com/maps/api/distancematrix/json', params=payload).content
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')

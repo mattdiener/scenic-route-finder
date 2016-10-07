@@ -159,8 +159,8 @@ function run(){
   clusterMarkers = [];
   photoMarkers = [];
 
-  var time = parseInt($('#travel-time').val().split(':')[0]) * 60 +
-             parseInt($('#travel-time').val().split(':')[1]);
+  var time = parseInt("0"+$('#travel-time-hours').val()) * 60 +
+             parseInt("0"+$('#travel-time-minutes').val());
 
   var isCar = $('#travel-mode').val() === 'car';
 
